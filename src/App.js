@@ -1,8 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import FilmsContainer from './containers/FilmsContainer'
 
 function App() {
-// Return function with container here. 
+return (
+  <FilmsContainer/>
+  );
 }
 
 export default App;
+
