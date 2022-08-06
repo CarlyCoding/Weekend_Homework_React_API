@@ -8,14 +8,16 @@ const FilmsContainer = () => {
     const [films, setFilms] = useState([])
     const [selectedFilmTitle, setSelectedFilmTitle] = useState('')
 
+    
     useEffect(() => {
-      getFilms()
+      fetch("https://ghibliapi.herokuapp.com/films")
+      .then(res => res.json())
+      .then(filmsData => {
+        console.log(filmsData);
+        setFilms(filmsData);
+      });
     }, [])
 
-    const getFilms = () => {
-        fetch("https://ghibliapi.herokuapp.com/films")
-        .then(res => res.json())
-        .then(filmsData => setFilms(filmsData))
 
     const handleFilmSelected = (title) => {
       setSelectedFilmTitle(title)
@@ -41,6 +43,6 @@ const FilmsContainer = () => {
       <FavouriteFilms films={films} onFilmSelected={handleFilmSelected} />
     </>
     )
-}}
+}
 
 export default FilmsContainer;
