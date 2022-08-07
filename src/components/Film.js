@@ -12,6 +12,7 @@ const Film = ({ film, onFavouriteToggle }) => {
 
     return (
         <>
+        <div className="Film_Detail">
         <h3>Name: {film.title}</h3>
         <h1><p>{film.original_title}</p></h1>
         <img src= {film.movie_banner} width="40%" height="20%"></img>
@@ -22,6 +23,7 @@ const Film = ({ film, onFavouriteToggle }) => {
         <p>
         </p>
         <button onClick={handleClick}>{favouriteButtonText}</button>
+        </div>
         </>
     )
 }

@@ -6,7 +6,8 @@ const FilmSelector = ({films, onFilmSelected}) => {
 
     return (
         <>
-        <label>Select your Ghibli Film!</label>
+        <div className="Selector">
+        <label id="select_film">Select your Ghibli Film!</label>
         <p></p>
         <select defaultValue="" onChange= { handleChange }>
             <option value = "" disabled > Chose a film </option> {
@@ -18,6 +19,7 @@ const FilmSelector = ({films, onFilmSelected}) => {
                 })
             }
         </select>
+        </div>
         </>
     )
 }

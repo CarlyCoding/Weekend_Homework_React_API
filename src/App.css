@@ -1,0 +1,28 @@
+html{
+    background-color:antiquewhite;
+}
+
+#title{
+    font-family: 'Cinzel', cursive;
+    text-align: center;
+    font-size: 60px;
+}
+
+#description{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    font-size: x-large;
+}
+
+.Selector{
+    justify-content: center;
+    display: flex;
+    font-family: 'Cinzel', cursive;
+    font-size: larger;
+}
+
+#select_film{
+    margin-right: 0.75em;
+}
