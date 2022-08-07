@@ -4,16 +4,18 @@ const FavouriteFilms = ({ films, onFilmSelected }) => {
 
     return (
         <>
-            <h3> Favourite Films </h3>
+        <div className="favourites">
+            <h3> My favourite Ghibli Films </h3>
             <ul>
                 {FavouriteFilms.map(film => {
                     return (
-                        <li key= {film.title}>
-                            <button onClick={() => onFilmSelected(film.title)}>{film.title}</button>
+                        <li id="film_list" key= {film.title}>
+                            <button id ="Fave" onClick={() => onFilmSelected(film.title)}>{film.title}</button>
                         </li>
                 )
                 })}
             </ul>
+        </div>
         </>
 
     )

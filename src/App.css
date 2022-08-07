@@ -1,5 +1,7 @@
 html{
-    background-color:antiquewhite;
+    background-image: url(totoro3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #title{
@@ -25,4 +27,25 @@ html{
 
 #select_film{
     margin-right: 0.75em;
+}
+
+.Film_Detail{
+    justify-content: center;
+    text-align: center;
+    font-family: 'Cinzel', cursive;
+    font-size: 30px;
+}
+
+.favourites{
+    font-family: 'Cinzel', cursive;
+    text-align: center;
+    font-size: larger;
+}
+
+#fave{
+    font-family: 'Cinzel', cursive;
+}
+
+#film_list{
+    list-style: none;
 }
