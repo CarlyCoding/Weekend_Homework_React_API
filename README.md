@@ -1,3 +1,7 @@
+This was a fun "Favourite Studio Ghibli Films" app I made with an API for a weekend homework assignment. This app allows the user to select their favourite Ghibli film and add it to their favourites. 
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
